@@ -2,26 +2,52 @@
 
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif
+
 }
 
-.planodefundo{
-  background-image: url(./IMAGENS/PLANO\ DE\ FUNDO/COMPLETA.jpg);
-  background-size: cover;
-  background-position: center center;
+
+header{
+  display: flex;
+  justify-content: space-around;
   opacity: 0.5;
-  width: 100%;
-  height: 400px;
+}
+
+body{
+  background-color: rgba(255, 255, 188, 0.809);
+  background: no-repeat;
+  background-size: 100% 100%;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  border-radius: 15px;
+}
+
+h3:hover {
+  color: rgb(75, 0, 146);
+  font-size: 25px;
+}
+
+h3{
+  color: black;
+  text-align: center;
+  font-size: 25px;
 }
 
 button{
-  display: flexbox;
-  margin: 20px auto;
+  display: box;
+  margin: auto;
   background:rgb(243, 78, 78);
   color: black;
   border: 0;
   cursor: pointer;
   padding: 6px 10px;
   position: left;
+  font-size: 15px;
+  text-align: center;
+  justify-content: space-around;
 }
 
 .popup-wrapper {
@@ -62,7 +88,4 @@ button{
   right: 10px;
   cursor: pointer;
 }
-
-
-
 
