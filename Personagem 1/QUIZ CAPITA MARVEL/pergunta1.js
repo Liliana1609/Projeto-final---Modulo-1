@@ -5,13 +5,14 @@ function meDigaSeuNome() {
 }
 
 function proximaPergunta () {
-    alert(`Muito bem ${nome} vá para a próxima pergunta`);
+    alert(`Muito bem ${nome}`);
 }
+
 
 function verificaResposta(respostaCerta) {
     var resposta = prompt ('Pense e digite sua resposta')
     if(resposta.toLocaleLowerCase() === respostaCerta) {
-        alert('Parabéns você acertou!! Vá para a proxima pergunta')
+        alert('Parabéns você acertou!!')
     }else{
         alert('Xiiii!! Tente novamente')
     }
