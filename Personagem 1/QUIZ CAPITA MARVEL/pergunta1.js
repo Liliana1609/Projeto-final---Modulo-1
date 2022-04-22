@@ -10,10 +10,20 @@ function proximaPergunta () {
 
 
 function verificaResposta(respostaCerta) {
+    var contador = 3
     var resposta = prompt ('Pense e digite sua resposta')
-    if(resposta.toLocaleLowerCase() === respostaCerta) {
-        alert('Parabéns você acertou!!')
-    }else{
-        alert('Xiiii!! Tente novamente')
+    while(contador > 1 ){
+        if(resposta.toLocaleLowerCase() === respostaCerta) {
+            alert('Parabéns você acertou!!')
+            window.location.href = 'pergunta2.html';
+            break;
+        }else{
+            contador --
+            alert('Xiiii!! Tente novamente')
+            var resposta = prompt ('Digite a resposta novamente')
+
+        }
+        window.location.href = 'perdeu.html';
     }
+
 }

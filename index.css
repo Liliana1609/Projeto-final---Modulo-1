@@ -5,17 +5,33 @@
 
 }
 
-
 header{
   display: flex;
   justify-content: space-around;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 body{
-  background-color: rgba(255, 255, 188, 0.809);
-  background: no-repeat;
+  background-image: url(./COMPLETA111.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+h1{
+  text-align: center;
+  color: rgb(107, 5, 5);
+  font-size: 55px;
+}
+
+h1:hover{
+  transform: scale(0.9);
+  background-color: rgb(69, 69, 237);
+  color: black;
+}
+h4{
+  text-align: center;
+  font-size: 25px;
+  color: black;
 }
 
 .container {
@@ -24,15 +40,20 @@ body{
   justify-content: space-around;
   border-radius: 15px;
 }
-
-h3:hover {
-  color: rgb(75, 0, 146);
-  font-size: 25px;
+.container2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-item: center;
 }
 
 h3{
   color: black;
   text-align: center;
+  font-size: 27px;
+}
+h3:hover {
+  color: rgb(75, 0, 146);
   font-size: 25px;
 }
 
@@ -43,11 +64,17 @@ button{
   color: black;
   border: 0;
   cursor: pointer;
-  padding: 6px 10px;
+  padding: 10px 20px;
   position: left;
-  font-size: 15px;
+  font-size: 22px;
   text-align: center;
   justify-content: space-around;
+}
+
+button:hover{
+  transform: scale(1.5);
+  background-color: rgb(87, 0, 70);
+  color: azure;
 }
 
 .popup-wrapper {
@@ -63,11 +90,14 @@ button{
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
+  max-height: 500px;
   margin: 10%;
-  padding: 20px;
+  padding: 30px;
   background: whitesmoke;
   position: relative;
+  font-size: 20px;
+  align-items: center;
 
 }
 .popup p {

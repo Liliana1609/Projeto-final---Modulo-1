@@ -4,15 +4,26 @@ function meDigaSeuNome() {
     nome = prompt ("Digite abaixo o seu nome");
 }
 
-function clickFinalizar () {
-    alert(`Muito bem ${nome} você conseguiu`);
+function proximaPergunta () {
+    alert(`Muito bem ${nome}`);
 }
 
+
 function verificaResposta(respostaCerta) {
+    var contador = 3
     var resposta = prompt ('Pense e digite sua resposta')
-    if(resposta.toLocaleLowerCase() === respostaCerta) {
-        alert('Parabéns você acertou!! Click em finalizar')
-    }else{
-        alert('Xiiii!! Tente novamente')
+    while(contador > 1 ){
+        if(resposta.toLocaleLowerCase() === respostaCerta) {
+            alert('Parabéns você acertou!!')
+            window.location.href = 'venceu.html';
+            break;
+        }else{
+            contador --
+            alert('Xiiii!! Tente novamente')
+            var resposta = prompt ('Digite a resposta novamente')
+
+        }
+        window.location.href = 'perdeu.html';
     }
+
 }
