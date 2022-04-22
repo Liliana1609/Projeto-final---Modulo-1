@@ -11,7 +11,7 @@ function verificaResposta(respostaCerta) {
     while(contador > 1 ){
         if(resposta.toLocaleLowerCase() === respostaCerta) {
             alert(`Parabéns ${nome} você acertou!!`)
-            window.location.href = 'pergunta2.html';
+            window.location.href = 'pergunta4.html';
             break;
         }else{
             contador --
