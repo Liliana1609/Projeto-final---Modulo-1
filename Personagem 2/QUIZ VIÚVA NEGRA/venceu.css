@@ -11,7 +11,6 @@ body{
   background-image: url('./COMPLETA111.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.7;
   justify-content: space-around;
 }
 .container {
@@ -28,6 +27,7 @@ h1{
   color: rgb(131, 5, 5);
   font-family: 'Press Start 2P'
   }
+
 h2{
   text-align: center;
   margin-top: 4%;
@@ -51,9 +51,17 @@ h2{
     justify-content: center;
   }
 
+  button a{
+    Text-decoration: none;
+    color: black;
+    }
+  button a:hover{
+    color: white;
+  }
+
   button:hover{
     transform: scale(1.5);
-    background-color: rgb(69, 69, 237);
+    background-color: rgb(98, 5, 5);
     }
 
 .container2{
